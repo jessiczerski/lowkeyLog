@@ -13,7 +13,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    
+    
+    @IBOutlet weak var affirmation: UIImageView!
+    
+    
 
 }
 
