@@ -148,6 +148,36 @@
             </objects>
             <point key="canvasLocation" x="1686.9565217391305" y="79.6875"/>
         </scene>
+        <!--extras-->
+        <scene sceneID="MfL-9Z-LwU">
+            <objects>
+                <viewController title="extras" id="iHZ-tz-H25" customClass="ExtrasTableViewController" customModule="lowkeyLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m63-Fa-ag6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aS7-gP-UpZ"/>
+                        <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjn-R7-jFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2378" y="80"/>
+        </scene>
+        <!--journal-->
+        <scene sceneID="Dmc-y6-kyI">
+            <objects>
+                <viewController title="journal" id="Cft-IG-YQY" customClass="JournalTableViewController" customModule="lowkeyLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C0l-Yi-BBS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="O8z-Oi-Kxg"/>
+                        <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKH-Qz-tOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3051" y="80"/>
+        </scene>
     </scenes>
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>

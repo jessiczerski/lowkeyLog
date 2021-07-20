@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09DD6C9426A773A400533546 /* ExtrasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD6C9326A773A400533546 /* ExtrasTableViewController.swift */; };
+		09DD6C9626A773BF00533546 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD6C9526A773BF00533546 /* JournalTableViewController.swift */; };
 		55C3A73226A73B150058BC2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C3A73126A73B150058BC2A /* AppDelegate.swift */; };
 		55C3A73426A73B150058BC2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C3A73326A73B150058BC2A /* SceneDelegate.swift */; };
 		55C3A73626A73B150058BC2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C3A73526A73B150058BC2A /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09DD6C9326A773A400533546 /* ExtrasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtrasTableViewController.swift; path = ../../ExtrasTableViewController.swift; sourceTree = "<group>"; };
+		09DD6C9526A773BF00533546 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JournalTableViewController.swift; path = ../../JournalTableViewController.swift; sourceTree = "<group>"; };
 		55C3A72E26A73B150058BC2A /* lowkeyLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lowkeyLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C3A73126A73B150058BC2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C3A73326A73B150058BC2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				55C3A73726A73B150058BC2A /* Main.storyboard */,
 				55C3A74A26A745BC0058BC2A /* QuotesViewController.swift */,
 				55C3A74826A7446B0058BC2A /* ResourcesViewController.swift */,
+				09DD6C9326A773A400533546 /* ExtrasTableViewController.swift */,
+				09DD6C9526A773BF00533546 /* JournalTableViewController.swift */,
 				55C3A73D26A73B1D0058BC2A /* Assets.xcassets */,
 				55C3A73F26A73B1D0058BC2A /* LaunchScreen.storyboard */,
 				55C3A74226A73B1D0058BC2A /* Info.plist */,
@@ -147,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C3A74926A7446B0058BC2A /* ResourcesViewController.swift in Sources */,
+				09DD6C9626A773BF00533546 /* JournalTableViewController.swift in Sources */,
 				55C3A74B26A745BC0058BC2A /* QuotesViewController.swift in Sources */,
+				09DD6C9426A773A400533546 /* ExtrasTableViewController.swift in Sources */,
 				55C3A73626A73B150058BC2A /* ViewController.swift in Sources */,
 				55C3A73226A73B150058BC2A /* AppDelegate.swift in Sources */,
 				55C3A73426A73B150058BC2A /* SceneDelegate.swift in Sources */,
