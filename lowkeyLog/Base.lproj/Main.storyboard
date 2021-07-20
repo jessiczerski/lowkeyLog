@@ -29,25 +29,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddz-6P-ebT">
-                                <rect key="frame" x="58" y="477" width="165" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="mental health resources"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzs-tc-Ra3">
-                                <rect key="frame" x="57" y="515" width="48" height="30"/>
+                                <rect key="frame" x="57" y="515" width="48" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="quotes"/>
+                                <connections>
+                                    <segue destination="1i1-1b-wR4" kind="show" id="wVj-9Z-xuU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jl5-wF-lIV">
                                 <rect key="frame" x="267" y="515" width="43" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="extras"/>
+                                <connections>
+                                    <segue destination="iHZ-tz-H25" kind="show" id="NLY-ET-wre"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG9-6m-sdb">
-                                <rect key="frame" x="265" y="477" width="47" height="30"/>
+                                <rect key="frame" x="265" y="477" width="47" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="journal"/>
+                                <connections>
+                                    <segue destination="Cft-IG-YQY" kind="show" id="Hfg-Ev-jv7"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-PK-hxq">
                                 <rect key="frame" x="57" y="139" width="315" height="243"/>
@@ -63,6 +67,14 @@
                                 </state>
                                 <connections>
                                     <action selector="AffirmationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Jd-a3-Sfh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddz-6P-ebT">
+                                <rect key="frame" x="20" y="477" width="165" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="mental health resources"/>
+                                <connections>
+                                    <segue destination="e3C-5K-Vsg" kind="show" id="7dB-Os-Bez"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,7 +94,7 @@
             <objects>
                 <viewController title="resourcesPage" id="e3C-5K-Vsg" customClass="ResourcesViewController" customModule="lowkeyLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Ei-mx-Nd6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVk-0J-iuC">
@@ -124,6 +136,7 @@
                         <viewLayoutGuide key="safeArea" id="dv4-4R-lC1"/>
                         <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uUA-b7-RO1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yS1-B5-tBN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,7 +147,7 @@
             <objects>
                 <viewController title="quotePage" id="1i1-1b-wR4" customClass="QuotesViewController" customModule="lowkeyLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HgP-Na-uMy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QUOTE HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwP-F0-G7A">
@@ -153,6 +166,7 @@
                         <viewLayoutGuide key="safeArea" id="DZQ-zZ-cd2"/>
                         <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6A3-ke-jKM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwW-lz-MDH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,30 +177,32 @@
             <objects>
                 <viewController title="extras" id="iHZ-tz-H25" customClass="ExtrasTableViewController" customModule="lowkeyLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m63-Fa-ag6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="aS7-gP-UpZ"/>
                         <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ktl-yj-yoF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjn-R7-jFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2423" y="80"/>
+            <point key="canvasLocation" x="520" y="733"/>
         </scene>
         <!--journal-->
         <scene sceneID="Dmc-y6-kyI">
             <objects>
                 <viewController title="journal" id="Cft-IG-YQY" customClass="JournalTableViewController" customModule="lowkeyLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C0l-Yi-BBS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="O8z-Oi-Kxg"/>
                         <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="S0R-7Q-LRg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKH-Qz-tOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3135" y="80"/>
+            <point key="canvasLocation" x="1535" y="733"/>
         </scene>
     </scenes>
     <resources>
