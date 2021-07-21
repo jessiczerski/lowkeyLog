@@ -9,6 +9,7 @@ import UIKit
 
 class AddJournalEntryViewController: UIViewController {
 
+    // comment to make sure we arent crazy
     @IBOutlet weak var promptText: UILabel!
     @IBOutlet weak var entryTextField: UITextField!
     
