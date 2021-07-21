@@ -133,58 +133,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="plQ-FI-6sK">
-                                <rect key="frame" x="0.0" y="56" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="datePicker:" destination="2dJ-H1-dBl" eventType="valueChanged" id="bY5-bU-pCq"/>
-                                </connections>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prompt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HC-5Y-cBd">
-                                <rect key="frame" x="20" y="264" width="374" height="147"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HC-5Y-cBd">
+                                <rect key="frame" x="20" y="369" width="374" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xo-Bh-hUr">
-                                <rect key="frame" x="342" y="226" width="59" height="30"/>
+                                <rect key="frame" x="95" y="310" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="stressed"/>
                                 <connections>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="PRl-fl-mDJ"/>
                                     <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="EIh-dU-e3F"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gc-mb-5iU">
-                                <rect key="frame" x="14" y="226" width="58" height="30"/>
+                                <rect key="frame" x="46" y="260" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="amazing"/>
                                 <connections>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="qWM-GJ-Vxi"/>
                                     <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="Uij-pE-zgL"/>
                                     <action selector="emotionButtonPushed:" destination="ajy-OE-Upq" eventType="touchUpInside" id="Wr5-xa-Phu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJT-Gr-DcM">
-                                <rect key="frame" x="100" y="224" width="46" height="30"/>
+                                <rect key="frame" x="147" y="260" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="good"/>
+                                <state key="normal" title="ok"/>
                                 <connections>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="Ngs-C4-1hK"/>
                                     <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="N5J-WQ-f1Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh3-TU-nDt">
-                                <rect key="frame" x="186" y="226" width="42" height="30"/>
+                                <rect key="frame" x="240" y="260" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="eh idk"/>
                                 <connections>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="PKd-mh-FiB"/>
                                     <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="IXF-Qk-Jdf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW5-KN-GWK">
-                                <rect key="frame" x="278" y="226" width="32" height="30"/>
+                                <rect key="frame" x="337" y="260" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="tired"/>
                                 <connections>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="LsI-WP-eNt"/>
                                     <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="WZm-OH-uHZ"/>
                                 </connections>
                             </button>
@@ -195,21 +193,53 @@
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="EJe-Ws-JXG"/>
+                                    <action selector="addTapped:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="6dp-mU-26v"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vei-Wn-uUr">
-                                <rect key="frame" x="46" y="485" width="323" height="34"/>
+                                <rect key="frame" x="46" y="549" width="323" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSr-9W-JkK">
+                                <rect key="frame" x="270" y="310" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ok"/>
+                                <connections>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="g1W-gt-r8p"/>
+                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="oDg-nm-MnF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ5-qo-4Ul">
+                                <rect key="frame" x="192" y="310" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="anxious"/>
+                                <connections>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="lhp-Bl-aI9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8E-6F-qu8">
+                                <rect key="frame" x="46" y="131" width="323" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="how are you feeling today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ief-cD-JbH">
+                                <rect key="frame" x="106" y="216" width="203" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tGI-ws-dP5"/>
                         <color key="backgroundColor" red="0.99905067680000004" green="0.9773028493" blue="0.92548269029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="dtF-uV-nE7"/>
                     <connections>
-                        <outlet property="datePicker" destination="plQ-FI-6sK" id="hRt-9Q-LH0"/>
+                        <outlet property="dateTextField" destination="r8E-6F-qu8" id="erj-Kp-qB0"/>
+                        <outlet property="entryTextField" destination="vei-Wn-uUr" id="bo9-8O-HwL"/>
                         <outlet property="promptText" destination="7HC-5Y-cBd" id="9bb-Cq-lbF"/>
                     </connections>
                 </viewController>
