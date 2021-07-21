@@ -29,23 +29,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzs-tc-Ra3">
-                                <rect key="frame" x="57" y="515" width="48" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="quotes"/>
-                                <connections>
-                                    <segue destination="1i1-1b-wR4" kind="show" id="wVj-9Z-xuU"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jl5-wF-lIV">
-                                <rect key="frame" x="267" y="515" width="43" height="30"/>
+                                <rect key="frame" x="329" y="512" width="43" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="extras"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DG9-6m-sdb">
-                                <rect key="frame" x="265" y="477" width="47" height="27"/>
+                                <rect key="frame" x="325" y="477" width="47" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="journal"/>
+                                <connections>
+                                    <segue destination="HRJ-5L-FuT" kind="show" id="tag-P1-V6w"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-PK-hxq">
                                 <rect key="frame" x="57" y="139" width="315" height="243"/>
@@ -64,11 +59,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddz-6P-ebT">
-                                <rect key="frame" x="20" y="477" width="165" height="30"/>
+                                <rect key="frame" x="57" y="475" width="165" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="mental health resources"/>
                                 <connections>
                                     <segue destination="e3C-5K-Vsg" kind="show" id="7dB-Os-Bez"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzs-tc-Ra3">
+                                <rect key="frame" x="57" y="511" width="48" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="quotes"/>
+                                <connections>
+                                    <segue destination="1i1-1b-wR4" kind="show" id="wVj-9Z-xuU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,6 +85,136 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+        <!--Journal -->
+        <scene sceneID="2MU-di-lhU">
+            <objects>
+                <tableViewController id="Gnq-Db-xJp" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PEw-lv-NNY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99905067680000004" green="0.9773028493" blue="0.92548269029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="v7I-Wu-Sub">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v7I-Wu-Sub" id="JgF-BN-jGH">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gnq-Db-xJp" id="ITa-gG-8eL"/>
+                            <outlet property="delegate" destination="Gnq-Db-xJp" id="DV9-BA-vGv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Journal " id="KIf-Re-6IL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Kly-uq-Mcg">
+                            <connections>
+                                <segue destination="2dJ-H1-dBl" kind="show" id="T3O-Nn-MXp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zju-w7-ceC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="755.35714285714278"/>
+        </scene>
+        <!--Add Journal Entry View Controller-->
+        <scene sceneID="Ec3-b3-0DR">
+            <objects>
+                <viewController id="2dJ-H1-dBl" customClass="AddJournalEntryViewController" customModule="lowkeyLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUZ-VF-KrG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="plQ-FI-6sK">
+                                <rect key="frame" x="0.0" y="56" width="414" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="datePicker:" destination="2dJ-H1-dBl" eventType="valueChanged" id="bY5-bU-pCq"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prompt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HC-5Y-cBd">
+                                <rect key="frame" x="20" y="264" width="374" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xo-Bh-hUr">
+                                <rect key="frame" x="348" y="226" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="EIh-dU-e3F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gc-mb-5iU">
+                                <rect key="frame" x="20" y="226" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="Uij-pE-zgL"/>
+                                    <action selector="emotionButtonPushed:" destination="ajy-OE-Upq" eventType="touchUpInside" id="Wr5-xa-Phu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJT-Gr-DcM">
+                                <rect key="frame" x="100" y="226" width="46" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="N5J-WQ-f1Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh3-TU-nDt">
+                                <rect key="frame" x="184" y="226" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="IXF-Qk-Jdf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW5-KN-GWK">
+                                <rect key="frame" x="271" y="226" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="WZm-OH-uHZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Journal Entry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMr-3K-gu2">
+                                <rect key="frame" x="20" y="437" width="374" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-fe-5yS">
+                                <rect key="frame" x="355" y="777" width="33" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="EJe-Ws-JXG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tGI-ws-dP5"/>
+                        <color key="backgroundColor" red="0.99905067680000004" green="0.9773028493" blue="0.92548269029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dtF-uV-nE7"/>
+                    <connections>
+                        <outlet property="datePicker" destination="plQ-FI-6sK" id="hRt-9Q-LH0"/>
+                        <outlet property="entryText" destination="dMr-3K-gu2" id="b0h-3M-4cW"/>
+                        <outlet property="promptText" destination="7HC-5Y-cBd" id="9bb-Cq-lbF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85a-dx-RrN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ajy-OE-Upq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1971.0144927536232" y="754.6875"/>
         </scene>
         <!--resourcesPage-->
         <scene sceneID="xva-2f-PsG">
@@ -166,37 +299,24 @@
             </objects>
             <point key="canvasLocation" x="1686.9565217391305" y="79.6875"/>
         </scene>
-        <!--extras-->
-        <scene sceneID="MfL-9Z-LwU">
+        <!--Navigation Controller-->
+        <scene sceneID="rx4-bN-aea">
             <objects>
-                <viewController title="extras" id="iHZ-tz-H25" customClass="ExtrasTableViewController" customModule="lowkeyLog" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m63-Fa-ag6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="aS7-gP-UpZ"/>
-                        <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ktl-yj-yoF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gjn-R7-jFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="li9-pH-g8F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HRJ-5L-FuT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cWA-Mo-KNS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LqJ-jP-D1E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gnq-Db-xJp" kind="relationship" relationship="rootViewController" id="h7P-MH-nz0"/>
+                    </connections>
+                </navigationController>
             </objects>
-            <point key="canvasLocation" x="520" y="733"/>
-        </scene>
-        <!--journal-->
-        <scene sceneID="Dmc-y6-kyI">
-            <objects>
-                <viewController title="journal" id="Cft-IG-YQY" customClass="JournalTableViewController" customModule="lowkeyLog" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="C0l-Yi-BBS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="O8z-Oi-Kxg"/>
-                        <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="S0R-7Q-LRg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yKH-Qz-tOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1535" y="733"/>
+            <point key="canvasLocation" x="128.98550724637681" y="755.35714285714278"/>
         </scene>
     </scenes>
     <resources>
