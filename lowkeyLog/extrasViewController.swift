@@ -16,32 +16,50 @@ class extrasViewController: UIViewController {
     }
     
     @IBAction func playlist1(_ sender: Any) {
+        let url = URL (string: "TYPE LINK")!
+        UIApplication.shared.open (url)
     }
     
     @IBAction func playlist2(_ sender: Any) {
+        let url = URL (string: "TYPE LINK")!
+        UIApplication.shared.open (url)
     }
     
     @IBAction func playlist3(_ sender: Any) {
+        let url = URL (string: "TYPE LINK")!
+        UIApplication.shared.open (url)
     }
     
     @IBAction func podcast1(_ sender: Any) {
+        let url = URL (string: "TYPE LINK")!
+        UIApplication.shared.open (url)
     }
     
     @IBAction func podcast2(_ sender: Any) {
+        let url = URL (string: "TYPE LINK")!
+        UIApplication.shared.open (url)
     }
     
     @IBAction func podcast3(_ sender: Any) {
+        let url = URL (string: "TYPE LINK")!
+        UIApplication.shared.open (url)
     }
     
     @IBAction func video1(_ sender: Any) {
+        let url = URL (string: "TYPE LINK")!
+        UIApplication.shared.open (url)
     }
     
 
     @IBAction func video2(_ sender: Any) {
+        let url = URL (string: "TYPE LINK")!
+        UIApplication.shared.open (url)
     }
     
     
     @IBAction func video3(_ sender: Any) {
+        let url = URL (string: "TYPE LINK")!
+        UIApplication.shared.open (url)
     }
     /*
     // MARK: - Navigation
