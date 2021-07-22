@@ -41,7 +41,7 @@ class extrasViewController: UIViewController {
     }
     
     @IBAction func podcast3(_ sender: Any) {
-        let url = URL (string: "https://open.spotify.com/show/77CB5cLsII5Q9XDDR4dXhl?si=rDHLE2YVS8GXNTqu4Lzq1g&dl_branch=1")!
+        let url = URL (string: "https://open.spotify.com/show/00u21GBwiKIvjUJgfds3Is?si=G2KlioC8Te6mnrd1eCaAQA&dl_branch=1")!
         UIApplication.shared.open (url)
     }
     
@@ -52,13 +52,13 @@ class extrasViewController: UIViewController {
     
 
     @IBAction func video2(_ sender: Any) {
-        let url = URL (string: "https://www.youtube.com/watch?v=inpok4MKVLM ")!
+        let url = URL (string: "https://www.youtube.com/watch?v=inpok4MKVLM")!
         UIApplication.shared.open (url)
     }
     
     
     @IBAction func video3(_ sender: Any) {
-        let url = URL (string: "https://youtu.be/Nw2oBIrQGLo ")!
+        let url = URL (string: "https://youtu.be/Nw2oBIrQGLo")!
         UIApplication.shared.open (url)
     }
     /*

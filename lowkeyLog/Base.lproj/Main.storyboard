@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -116,7 +116,7 @@
                         <color key="backgroundColor" red="0.99905067680000004" green="0.9773028493" blue="0.92548269029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="v7I-Wu-Sub">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v7I-Wu-Sub" id="JgF-BN-jGH">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -298,33 +298,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NM-lA-bvq">
-                                <rect key="frame" x="29" y="229" width="102" height="101"/>
+                                <rect key="frame" x="29" y="248" width="102" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Image from iOS (1)"/>
+                                <state key="normal" backgroundImage="IMG_9114"/>
                                 <connections>
                                     <action selector="playlist1:" destination="lf8-1U-g4d" eventType="touchUpInside" id="D9W-YY-cTy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1L-XF-6Lv">
-                                <rect key="frame" x="156" y="229" width="102" height="100"/>
+                                <rect key="frame" x="156" y="248" width="102" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Image from iOS (2)"/>
+                                <state key="normal" backgroundImage="IMG_9110"/>
                                 <connections>
                                     <action selector="playlist2:" destination="lf8-1U-g4d" eventType="touchUpInside" id="feP-wj-U6f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUP-IA-8Zy">
-                                <rect key="frame" x="284" y="229" width="102" height="101"/>
+                                <rect key="frame" x="284" y="247" width="102" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Image from iOS (3)"/>
+                                <state key="normal" backgroundImage="IMG_9111"/>
                                 <connections>
                                     <action selector="playlist3:" destination="lf8-1U-g4d" eventType="touchUpInside" id="sMb-oV-8gy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auI-Wf-vpO">
-                                <rect key="frame" x="47" y="484" width="111" height="30"/>
+                                <rect key="frame" x="29" y="462" width="102" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Daily Meditation">
+                                <state key="normal" backgroundImage="IMG_9113">
                                     <color key="titleColor" red="0.22590041159999999" green="0.1685667038" blue="0.1223878637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -332,9 +332,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSx-34-QTK">
-                                <rect key="frame" x="169" y="484" width="76" height="30"/>
+                                <rect key="frame" x="156" y="462" width="101" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Affirmation">
+                                <state key="normal" backgroundImage="IMG_9112">
                                     <color key="titleColor" red="0.22590041159999999" green="0.1685667038" blue="0.1223878637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -342,9 +342,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLr-Nq-qLd">
-                                <rect key="frame" x="289" y="484" width="66" height="30"/>
+                                <rect key="frame" x="284" y="462" width="101" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Self-Care">
+                                <state key="normal" backgroundImage="IMG_9108">
                                     <color key="titleColor" red="0.22590041159999999" green="0.1685667038" blue="0.1223878637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -352,9 +352,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4or-V8-ROc">
-                                <rect key="frame" x="69" y="663" width="66" height="30"/>
+                                <rect key="frame" x="29" y="691" width="102" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Breathing">
+                                <state key="normal" backgroundImage="IMG_9108">
                                     <color key="titleColor" red="0.22590041159999999" green="0.1685667038" blue="0.1223878637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -362,9 +362,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vs1-Yh-wjz">
-                                <rect key="frame" x="171" y="663" width="73" height="30"/>
+                                <rect key="frame" x="156" y="690" width="102" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Meditation">
+                                <state key="normal" backgroundImage="IMG_9113">
                                     <color key="titleColor" red="0.22590041159999999" green="0.1685667038" blue="0.1223878637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -372,9 +372,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUj-yV-dmC">
-                                <rect key="frame" x="305" y="663" width="34" height="30"/>
+                                <rect key="frame" x="284" y="690" width="102" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Yoga">
+                                <state key="normal" backgroundImage="IMG_9109">
                                     <color key="titleColor" red="0.22590041159999999" green="0.1685667038" blue="0.1223878637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -382,15 +382,15 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen_Shot_2021-07-22_at_12.23.37_PM-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="U5R-RI-Ft0">
-                                <rect key="frame" x="87" y="105" width="240" height="128"/>
+                                <rect key="frame" x="87" y="128" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen_Shot_2021-07-22_at_12.24.08_PM-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="nnW-WZ-E3Z">
-                                <rect key="frame" x="87" y="375" width="240" height="128"/>
+                                <rect key="frame" x="97" y="343" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen_Shot_2021-07-22_at_12.23.45_PM-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Fpd-Qi-nEM">
-                                <rect key="frame" x="87" y="538" width="240" height="128"/>
+                                <rect key="frame" x="97" y="560" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gog-Ns-pID">
@@ -407,10 +407,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="self-care resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35v-dY-hoY">
-                                <rect key="frame" x="95" y="93" width="244" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="self-care resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35v-dY-hoY">
+                                <rect key="frame" x="62" y="100" width="310" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -541,6 +541,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfj-cW-BbA">
+                                <rect key="frame" x="50" y="272" width="313" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Screen_Shot_2021-07-22_at_1.55.37_PM-removebg-preview">
+                                    <color key="titleColor" red="0.2117646933" green="0.26274511220000002" blue="0.20784312490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="1i1-1b-wR4" eventType="touchUpInside" id="vIB-Wo-xLm"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwP-F0-G7A">
                                 <rect key="frame" x="98" y="327" width="229" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -548,22 +558,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfj-cW-BbA">
-                                <rect key="frame" x="149" y="247" width="117" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="words of wisdom">
-                                    <color key="titleColor" red="0.2117646933" green="0.26274511220000002" blue="0.20784312490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="1i1-1b-wR4" eventType="touchUpInside" id="vIB-Wo-xLm"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1293-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="8tY-Ld-7QY">
                                 <rect key="frame" x="-201" y="247" width="850" height="572"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1293-removebg-preview copy" translatesAutoresizingMaskIntoConstraints="NO" id="sRb-QV-Uhv">
-                                <rect key="frame" x="-420" y="68" width="1190" height="527"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MI8-VW-lmu">
@@ -580,6 +576,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1293-removebg-preview copy" translatesAutoresizingMaskIntoConstraints="NO" id="sRb-QV-Uhv">
+                                <rect key="frame" x="-420" y="68" width="1190" height="527"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DZQ-zZ-cd2"/>
                         <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -614,14 +614,19 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BD2-Yq-9Mr"/>
+        <segue reference="Atk-3K-jS4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_1293-removebg-preview" width="408" height="612"/>
         <image name="IMG_1293-removebg-preview copy" width="408" height="612"/>
-        <image name="Image from iOS (1)" width="1773" height="1773"/>
-        <image name="Image from iOS (2)" width="1773" height="1773"/>
-        <image name="Image from iOS (3)" width="1773" height="1773"/>
+        <image name="IMG_9108" width="2048" height="2048"/>
+        <image name="IMG_9109" width="2048" height="2048"/>
+        <image name="IMG_9110" width="2048" height="2048"/>
+        <image name="IMG_9111" width="2048" height="2048"/>
+        <image name="IMG_9112" width="2048" height="2048"/>
+        <image name="IMG_9113" width="2048" height="2048"/>
+        <image name="IMG_9114" width="2048" height="2048"/>
+        <image name="Screen_Shot_2021-07-22_at_1.55.37_PM-removebg-preview" width="316" height="78"/>
         <image name="Screen_Shot_2021-07-22_at_12.23.37_PM-removebg-preview" width="229" height="93"/>
         <image name="Screen_Shot_2021-07-22_at_12.23.45_PM-removebg-preview" width="180" height="69"/>
         <image name="Screen_Shot_2021-07-22_at_12.24.08_PM-removebg-preview" width="233" height="86"/>
