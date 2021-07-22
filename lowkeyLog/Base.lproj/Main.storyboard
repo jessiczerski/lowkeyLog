@@ -45,12 +45,6 @@
                                     <segue destination="HRJ-5L-FuT" kind="show" id="tag-P1-V6w"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-PK-hxq">
-                                <rect key="frame" x="57" y="139" width="315" height="243"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20570111269999999" green="0.2629283369" blue="0.20502242449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.20570111269999999" green="0.2629283369" blue="0.20502242449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih4-tf-rHm">
                                 <rect key="frame" x="67" y="349" width="294" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,6 +71,12 @@
                                     <segue destination="1i1-1b-wR4" kind="show" id="wVj-9Z-xuU"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-PK-hxq">
+                                <rect key="frame" x="50" y="139" width="315" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20570111269999999" green="0.2629283369" blue="0.20502242449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.20570111269999999" green="0.2629283369" blue="0.20502242449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -114,6 +114,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Journal " id="KIf-Re-6IL">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.backward" catalog="system" id="ho4-JF-ySA">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="v6U-Mp-afe"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Kly-uq-Mcg">
                             <connections>
                                 <segue destination="2dJ-H1-dBl" kind="show" id="T3O-Nn-MXp"/>
@@ -141,12 +146,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xo-Bh-hUr">
-                                <rect key="frame" x="95" y="310" width="59" height="30"/>
+                                <rect key="frame" x="95" y="310" width="59" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="stressed"/>
                                 <connections>
-                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="PRl-fl-mDJ"/>
-                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="EIh-dU-e3F"/>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="I71-a9-GYx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gc-mb-5iU">
@@ -154,18 +158,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="amazing"/>
                                 <connections>
-                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="qWM-GJ-Vxi"/>
-                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="Uij-pE-zgL"/>
-                                    <action selector="emotionButtonPushed:" destination="ajy-OE-Upq" eventType="touchUpInside" id="Wr5-xa-Phu"/>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="bxu-zZ-TZR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJT-Gr-DcM">
-                                <rect key="frame" x="147" y="260" width="46" height="30"/>
+                                <rect key="frame" x="147" y="260" width="46" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ok"/>
                                 <connections>
-                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="Ngs-C4-1hK"/>
-                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="N5J-WQ-f1Q"/>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="tdq-ss-KzW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh3-TU-nDt">
@@ -173,8 +174,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="eh idk"/>
                                 <connections>
-                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="PKd-mh-FiB"/>
-                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="IXF-Qk-Jdf"/>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="Hvh-uS-oHC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW5-KN-GWK">
@@ -182,8 +182,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="tired"/>
                                 <connections>
-                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="LsI-WP-eNt"/>
-                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="WZm-OH-uHZ"/>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="41w-cP-W8a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-fe-5yS">
@@ -192,8 +191,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
-                                    <action selector="addButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="EJe-Ws-JXG"/>
-                                    <action selector="addTapped:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="6dp-mU-26v"/>
+                                    <action selector="addTapped:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="c5f-Yr-Hdr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vei-Wn-uUr">
@@ -207,8 +205,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ok"/>
                                 <connections>
-                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="g1W-gt-r8p"/>
-                                    <action selector="emotionButtonPushed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="oDg-nm-MnF"/>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="DFl-fv-H4a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ5-qo-4Ul">
@@ -216,10 +213,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="anxious"/>
                                 <connections>
-                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="lhp-Bl-aI9"/>
+                                    <action selector="emotionButtonPressed:" destination="2dJ-H1-dBl" eventType="touchUpInside" id="5hd-q1-RKt"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8E-6F-qu8">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pick a date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8E-6F-qu8">
                                 <rect key="frame" x="46" y="131" width="323" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -244,7 +241,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="85a-dx-RrN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="ajy-OE-Upq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1973.913043478261" y="754.6875"/>
         </scene>
@@ -283,6 +279,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YY-IK-eaz">
+                                <rect key="frame" x="43" y="739" width="53" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="H93-1R-HWd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l5c-Z2-6VS"/>
                         <color key="backgroundColor" red="0.99910849329999996" green="0.97656565900000003" blue="0.91433173420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -343,6 +347,14 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="uA5-lI-WJj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rc4-ra-eaW">
+                                <rect key="frame" x="29" y="752" width="40" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="dBv-6m-pDW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dv4-4R-lC1"/>
                         <color key="backgroundColor" red="0.99913495779999995" green="0.9765493274" blue="0.92673212289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -372,6 +384,14 @@
                                 <rect key="frame" x="152" y="209" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="click for a quote"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTt-BR-ouo">
+                                <rect key="frame" x="34" y="739" width="40" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="hdY-8O-DQZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DZQ-zZ-cd2"/>
@@ -403,7 +423,12 @@
             <point key="canvasLocation" x="128.98550724637681" y="755.35714285714278"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="H93-1R-HWd"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="image" width="290" height="330"/>
     </resources>
 </document>

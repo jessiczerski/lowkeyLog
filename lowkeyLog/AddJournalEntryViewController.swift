@@ -93,8 +93,9 @@ class AddJournalEntryViewController: UIViewController {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
 
             if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-                let journal = JournalCD(entity: JournalCD.entity(), insertInto: context)
-
+     
+                let journal = JournalCD(entity: JournalCD.entity(),insertInto: context)
+               
                 if let entryText = entryTextField.text {
                     journal.entry = entryText
                 }
