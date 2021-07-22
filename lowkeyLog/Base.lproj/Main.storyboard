@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-PK-hxq">
-                                <rect key="frame" x="50" y="139" width="315" height="243"/>
+                                <rect key="frame" x="62" y="139" width="315" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20570111269999999" green="0.2629283369" blue="0.20502242449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.20570111269999999" green="0.2629283369" blue="0.20502242449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -115,11 +115,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Journal " id="KIf-Re-6IL">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.backward" catalog="system" id="ho4-JF-ySA">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="v6U-Mp-afe"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Kly-uq-Mcg">
                             <connections>
                                 <segue destination="2dJ-H1-dBl" kind="show" id="T3O-Nn-MXp"/>
@@ -438,17 +433,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QUOTE HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwP-F0-G7A">
-                                <rect key="frame" x="155" y="327" width="104" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwP-F0-G7A">
+                                <rect key="frame" x="98" y="327" width="229" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfj-cW-BbA">
-                                <rect key="frame" x="152" y="209" width="110" height="30"/>
+                                <rect key="frame" x="149" y="209" width="117" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="click for a quote"/>
+                                <state key="normal" title="words of wisdom">
+                                    <color key="titleColor" red="0.2117646933" green="0.26274511220000002" blue="0.20784312490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="1i1-1b-wR4" eventType="touchUpInside" id="vIB-Wo-xLm"/>
                                 </connections>
@@ -504,7 +501,6 @@
         <image name="Screen_Shot_2021-07-22_at_12.23.37_PM-removebg-preview" width="229" height="93"/>
         <image name="Screen_Shot_2021-07-22_at_12.23.45_PM-removebg-preview" width="180" height="69"/>
         <image name="Screen_Shot_2021-07-22_at_12.24.08_PM-removebg-preview" width="233" height="86"/>
-        <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="image" width="290" height="330"/>
     </resources>
