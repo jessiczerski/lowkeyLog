@@ -15,7 +15,34 @@ class extrasViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func playlist1(_ sender: Any) {
+    }
+    
+    @IBAction func playlist2(_ sender: Any) {
+    }
+    
+    @IBAction func playlist3(_ sender: Any) {
+    }
+    
+    @IBAction func podcast1(_ sender: Any) {
+    }
+    
+    @IBAction func podcast2(_ sender: Any) {
+    }
+    
+    @IBAction func podcast3(_ sender: Any) {
+    }
+    
+    @IBAction func video1(_ sender: Any) {
+    }
+    
 
+    @IBAction func video2(_ sender: Any) {
+    }
+    
+    
+    @IBAction func video3(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
