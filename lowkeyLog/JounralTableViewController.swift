@@ -9,10 +9,18 @@ import UIKit
 
 class JounralTableViewController: UITableViewController {
 
-    var journals : [Journal] = []
+    var journals : [JournalCD] = []
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    override func viewDidAppear(_ animated: Bool) {
+        getJournals()
+      
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -25,32 +33,29 @@ class JounralTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return journals.count
     }
     
-    func createJournalEntry () -> [Journal] {
-        let trial = Journal()
-        trial.month = 7
-        trial.day = 20
-        trial.year = 2021
-        
-        trial.date = "\(trial.month)/\(trial.day)/\(trial.year)"
-        
-        trial.prompt = "tell me how you are feeling today"
-        trial.entry = "I am feeling good."
-        
-        return [trial]
-    }
-
+    func getJournals() {
+            if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+                if let coreDataJournals = try? context.fetch(JournalCD.fetchRequest()) as? [JournalCD] {
+                        journals = coreDataJournals
+                        tableView.reloadData()
+                }
+            }
+        print (journals.count)
+        }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // let journal = journals[indexPath.row]
+        let journal = journals[indexPath.row]
+        cell.textLabel?.text =  "\(journal.date!) \(journal.entry!)"
         
         // potentially have different emojis assigned to different emotions?
 
@@ -66,14 +71,14 @@ class JounralTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let addVC = segue.destination as? AddJournalEntryViewController {
+            addVC.previousVC = self
+        }
     }
-    */
 
 }

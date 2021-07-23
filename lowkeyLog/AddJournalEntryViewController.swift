@@ -9,6 +9,8 @@ import UIKit
 
 class AddJournalEntryViewController: UIViewController {
 
+    var previousVC = JounralTableViewController()
+    
     // comment to make sure we arent crazy
     @IBOutlet weak var promptText: UILabel!
     @IBOutlet weak var entryTextField: UITextField!
@@ -90,30 +92,33 @@ class AddJournalEntryViewController: UIViewController {
     }
     
     @IBAction func addTapped(_ sender: Any) {
+        
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-
-            if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-     
-                let journal = JournalCD(entity: JournalCD.entity(),insertInto: context)
-               
-                if let entryText = entryTextField.text {
-                    journal.entry = entryText
-                }
-           
-                if let prompt = promptText.text {
-                    journal.prompt = prompt
-                }
             
-                if let date = dateTextField.text {
-                    journal.date = date
-                }
+            let journal = JournalCD(entity: JournalCD.entity(), insertInto: context)
             
+            if let entryText = entryTextField.text {
+                journal.entry = entryText
             }
-
+       
+            if let prompt = promptText.text {
+                journal.prompt = prompt
+            }
+        
+            if let date = dateTextField.text {
+                journal.date = date
+            }
+            
             try? context.save()
-
+            
+            previousVC.journals.append(journal)
+            previousVC.tableView.reloadData()
             navigationController?.popViewController(animated: true)
+            
         }
+        
+        
+        
     }
     
     
