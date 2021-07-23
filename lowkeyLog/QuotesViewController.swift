@@ -11,7 +11,7 @@ class QuotesViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     
-    let arrayOfQuotes = ["Make time to take care of yourself", "Manifest your dream life.", "Life doesn't have to be perfect to be beautiful.", "PROGRESS not perfection", "Our destiny is not written for us, it's written by us.", "Start where you are. Use what you have. Do what you can.", "The best revenge is massive success."]
+    let arrayOfQuotes = ["Make time to take care of yourself.", "Manifest your dream life.", "Life doesn't have to be perfect to be beautiful.", "PROGRESS, not perfection.", "Our destiny is not written for us, it's written by us.", "Start where you are. Use what you have. Do what you can.", "The best revenge is massive success."]
     
     
     override func viewDidLoad() {
